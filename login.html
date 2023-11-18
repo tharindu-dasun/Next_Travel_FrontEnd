@@ -9,15 +9,120 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fonts -->
-    <link rel = "stylesheet" href = "lk.ijse.gdse/font/fonts.css">
+    <link rel = "stylesheet" href = "font/fonts.css">
     <!-- normalize css -->
-    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/normalize.css">
+    <link rel = "stylesheet" href = "css/normalize.css">
     <!-- custom css -->
-    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/utility.css">
-    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/style.css">
-    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/responsive.css">
+    <link rel = "stylesheet" href = "css/utility.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/responsive.css">
 
 </head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password], input[type=number], input[type=email], input[type=tel], input[type=file] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=file]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity:1;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+
+    .cancelbtn:hover {
+        background-color: #333;
+    }
+
+    /* Center the avatar image inside this container */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    /* The "upload" button */
+    .upload {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .upload:hover {
+        opacity:1;
+    }
+
+    /* Add padding to containers */
+    .loginForm_container {
+        padding: 16px;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .left-side, .right-side {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+</style>
+
+
 <body>
 <div class="all">
     <!-- navbar  -->
@@ -60,7 +165,7 @@
                         <a href = "contact.html" class = "nav-link">Contact</a>
                     </li>
                     <li class = "nav-item">
-                        <a href = "login.html" class = "nav-link">Login</a>
+                        <a href = "login.html" class = "nav-link">User</a>
                     </li>
                     <li class = "nav-item">
                         <a href = "admin.html" class = "nav-link">Admin</a>
@@ -78,39 +183,84 @@
         <div class = "container">
             <div class = "header-title">
                 <h1>User Login Form</h1>
-                <p>We're here to help you plan the perfect Sri Lankan vacation.
-                    Contact </p>
             </div>
 
 <!--            login ---------------------------------------->
-            <div class="login_container">
-<!--                <h1>User Login Form</h1>-->
-                <form action="/login" method="post">
-                    <div class="form-item">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="address">Address:</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="nic">NIC:</label>
-                        <input type="text" id="nic" name="nic" required>
-                    </div>
-                    <div class="form-item">
-                        <button type="submit">Login</button>
-                    </div>
-                </form>
+<!--            <div class="login_container">-->
+<!--&lt;!&ndash;                <h1>User Login Form</h1>&ndash;&gt;-->
+<!--                <form action="/login" method="post">-->
+<!--                    <div class="form-item">-->
+<!--                        <label for="username">Username:</label>-->
+<!--                        <input type="text" id="username" name="username" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <label for="address">Address:</label>-->
+<!--                        <input type="text" id="address" name="address" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <label for="email">Email:</label>-->
+<!--                        <input type="email" id="email" name="email" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <label for="phone">Phone Number:</label>-->
+<!--                        <input type="tel" id="phone" name="phone" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <label for="nic">NIC:</label>-->
+<!--                        <input type="text" id="nic" name="nic" required>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <button type="submit">Login</button>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+
+
+<!--            _-------------------------Login----------------------------->
+
+            <h2>-------------------------------------------------------------</h2>
+
+            <div class="loginForm_container">
+                <div class="left-side">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="nic"><b>NIC Number</b></label>
+                    <input type="text" placeholder="Enter NIC Number" name="nic" required>
+
+                    <label for="age"><b>Age</b></label>
+                    <input type="number" placeholder="Enter Age" name="age" required>
+
+                    <label for="gender"><b>Gender</b></label>
+                    <input type="text" placeholder="Enter Gender" name="gender" required>
+                </div>
+
+                <div class="right-side">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
+
+                    <label for="address"><b>Address</b></label>
+                    <input type="text" placeholder="Enter Address" name="address" required>
+
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+
+                    <label for="id"><b>Identity Card Front Image</b></label>
+                    <input type="file" name="id" id="id" required>
+
+                    <label for="id"><b>Identity Card Back Image</b></label>
+                    <input type="file" name="id" id="id" required>
+                </div>
             </div>
+            <button type="submit">Login</button>
+            <h4>---Already have an account ?----</h4>
+            <button type="submit">Sign Up</button>
+            <br>
+            <br>
+            <br>
 
 
 
