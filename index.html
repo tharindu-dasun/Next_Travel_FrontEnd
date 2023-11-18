@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel Planning System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+    <div class="all">
+    <!-- navbar  -->
+    <nav class = "navbar">
+        <div class = "container flex">
+            <a href = "index.html" class = "site-brand">
+                Next<span>Travel</span>
+            </a>
+
+            <button type = "button" id = "navbar-show-btn" class = "flex">
+                <i class = "fas fa-bars"></i>
+            </button>
+            <div id = "navbar-collapse">
+                <button type = "button" id = "navbar-close-btn" class = "flex">
+                    <i class = "fas fa-times"></i>
+                </button>
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link">Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "about.html" class = "nav-link">About Us</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "hotel.html" class = "nav-link">Hotels</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "vehicle.html" class = "nav-link">Vehicles</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "travel_plans.html" class = "nav-link">Travel Plans</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "gallery.html" class = "nav-link">Gallery</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "booking.html" class = "nav-link">Booking</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "contact.html" class = "nav-link">Contact</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "login.html" class = "nav-link">Login</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "admin.html" class = "nav-link">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class = "flex">
+        <div class = "container">
+            <div class = "header-title">
+                <h1>Welcome !</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio.</p>
+            </div>
+            <div class = "header-form">
+                <h2>Choose your Travel location:</h2>
+                <form class = "flex">
+                    <input type = "text" class = "form-control" placeholder="Destination name">
+                    <input type="date" class = "form-control" placeholder="Date">
+                    <input type="number" class = "form-control" placeholder="Price ($)">
+                    <input type="submit" class = "btn" value = "Search">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- featured section -->
+    <section id = "featured" class = "py-4">
+        <div class = "container">
+            <div class = "title-wrap">
+                <span class = "sm-title">know about some places before your travel</span>
+                <h2 class = "lg-title">featured places</h2>
+            </div>
+
+            <div class = "featured-row">
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-kandy.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Kandy and Upcountry
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Kandy is Sri Lanka’s last Singhalese Royal Kingdom, with panoramic geography surrounding magnificent peaks in the aisle, 1,600 feet above sea level. The Sacred Tooth Relic Temple, the most respected Buddhist Temple, with over 4,000 designated types of flora, are highly known in the city.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-downsouth.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Down South
+                            </span>
+                        <div>
+                            <p class = "text">
+                                The Down south of Sri Lanka is one of the best-kept secrets in the Asian Region. However, that secret is quickly revealed as more and more travellers gather to Sri Lanka to its stunning beaches, incredible wildlife, rich culture, <br>and classical heritage landmarks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-colombo.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Capital Colombo
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Colombo has become a popular tourist hotspot endeavouring various social, historical also nightlife attractions.
+                                Found on the western coast, <br>Colombo is the Capital city of Sri Lanka and a diversely populated city on the island. Often, Colombo was renowned for its natural harbour.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-Western Coast.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Western Coast
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Calido beach, the local’s favourite is located north of the estuary and can be reached from the town. You’ll find that it’s perfect for a family outing, watch <br>the sunset or take a walk along the beach sprinkled with cuttlefish and shells. People usually can be seen flying kites, volleyball and even football here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-sigiriya.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Sigiriya
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Sigiriya, also identified as the Lion's Rock, is a rock fortress and a castle <br> found in the Matale district of Sri Lanka. Gardens, ponds and other structures surround this ruin. King Kassapa built Sigiriya, and it is included as a World Heritage site. Sigiriya is the best-preserved city centre in Asia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-dabulla.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Dambulla
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Dambulla, a captivating city located in the central part of Sri Lanka, is a treasure trove of cultural and natural wonders. With its rich history, awe-inspiring landmarks, and breathtaking landscapes, Dambulla offers a truly immersive experience for travelers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-anuradhapura.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Anuradhapura
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Anuradhapura, Sri Lanka’s first capital city, Also known as the Sacred City of Anuradhapura, is found in Northern Central Province, Sri Lanka. <br> Anuradhapura is famous for Archaeological sites, culture, food and <br>attractions set upon an iconic inheritance backdrop.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-polonnaruwa.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Polonnaruwa
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Nestled in the heart of Sri Lanka lies the captivating city of Polonnaruwa, a UNESCO World Heritage Site that takes us on a journey through the island’sisland’s rich history. With its well-preserved ruins, ancient temples, Polonnaruwa offers a mesmerising glimpse into the past.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-matale.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Matale
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Matale occupies an important place in Sri Lanka's history and is situated in <br> the country's Matale District, Central Province. Matale is 142 kilometres from Colombo and holds following to Kandy. The Knuckles Mountain Range, which is a noticeable feature, encompasses the town.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-easterncoast.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Eastern Coast
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Arugam Bay is a tropical haven on the eastern coast of Sri Lanka. Renowned for its stunning beaches, incredible waves, and vibrant culture, Arugam Bay <br> has become a popular destination for surfers and beach enthusiasts <br>worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-trinco.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Trincomalee
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Trincomalee is a city on the east coast of Sri Lanka, known for its stunning beaches, rich history, and diverse wildlife. It is a popular destination for <br> tourists who want to experience the natural beauty and cultural heritage of <br>Sri Lanka.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-Jaffna.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Jaffna
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Jaffna is located in northern Sri Lanka. It is situated on a flat, arid peninsula near the island’s northern extremity. It is a commercial centre for agricultural products from the arm and adjacent islands, and it is connected to the rest of the country by road and train.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-yala.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Yala National Park
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Yala (යාල) National Park is the most visited and second largest national park in Sri Lanka, bordering the Indian Ocean. The park consists of five blocks, with three of which are now open to the public. There are also two adjoining parks, Kumana National Park or 'Yala East' and Lunugamvehera National Park.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featured-item my-2 shadow">
+                    <img src = "images/featured-kithulgala.jpg" alt = "featured place">
+                    <div class = "featured-item-content">
+                            <span>
+                                <i class = "fas fa-map-marker-alt"></i>
+                                Kithulgala
+                            </span>
+                        <div>
+                            <p class = "text">
+                                Kitulgala is a small town located in the Hill Country of Sri Lanka. This place is famous for its beautiful landscape, rich biodiversity, and exciting adventure activities. The Academy Award-winning movie, The Bridge on the River Kwai, was filmed on the Kelani River near Kitulgala.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of featured section -->
+
+    <!-- services section -->
+    <section id = "services" class = "py-4">
+        <div class="services-back">
+        <div class = "container">
+            <div class = "title-wrap">
+                <span class = "sm-title">know about services that we offer</span>
+                <h2 class = "lg-title">Our services</h2>
+            </div>
+
+            <div class = "services-row">
+                <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-hotel"></i>
+                        </span>
+                    <h3>Luxurious Hotel</h3>
+                    <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                    <a href = "#" class = "btn">Read more</a>
+                </div>
+
+                <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                    <h3>Trave Guide</h3>
+                    <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                    <a href = "#" class = "btn">Read more</a>
+                </div>
+
+                <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa fa-car"></i>
+                        </span>
+                    <h3>Vehicles</h3>
+                    <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                    <a href = "#" class = "btn">Read more</a>
+                </div>
+
+                <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                    <h3>Suitable Price</h3>
+                    <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quo, totam repellat velit, dignissimos sequi error a minima architecto fugit nisi dolorum repellendus?</p>
+                    <a href = "#" class = "btn">Read more</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end of services section -->
+
+    <!-- Review section -->
+    <section id = "testimonials" class = "py-4">
+        <div class="testimonials-class">
+        <div class = "container">
+            <div class = "title-wrap">
+                <span class = "sm-title">what our clients say about us</span>
+                <h2 class = "lg-title">Reviews</h2>
+            </div>
+
+            <div class = "test-row">
+                <div class = "test-item">
+                    <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis, asperiores, velit iste eos officiis tempora magni quaerat quo consectetur expedita cum recusandae facere nam voluptate minus iusto eum. Delectus!</p>
+                    <div class = "test-item-info">
+                        <img src = "images/test-1.jpg" alt = "testimonial">
+                        <div>
+                            <h3>S.W. Perera</h3>
+                            <p class = "text">Trip to Anuradhapura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "test-item">
+                    <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ut dolores tenetur harum deserunt. Maxime tenetur consectetur recusandae nobis fugit iusto natus quibusdam nulla!</p>
+                    <div class = "test-item-info">
+                        <img src = "images/test-2.jpg" alt = "testimonial">
+                        <div>
+                            <h3>David Warner</h3>
+                            <p class = "text">Trip to Mirissa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "test-item">
+                    <p class = "text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sapiente amet expedita quae autem deleniti quo magni numquam facilis soluta dicta, praesentium ipsum, quos optio sed quibusdam! Reprehenderit recusandae provident id nemo!</p>
+                    <div class = "test-item-info">
+                        <img src = "images/test-3.jpg" alt = "testimonial">
+                        <div>
+                            <h3>Juliya Senevirathna</h3>
+                            <p class = "text">Trip to Sigiriya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end of Reviews section -->
+
+    <!-- footer -->
+    <footer class = "py-4">
+        <div class = "container footer-row">
+            <div class = "footer-item">
+                <a href = "index.html" class = "site-brand">
+                    Next<span>Travel</span>
+                </a>
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+            </div>
+
+            <div class = "footer-item">
+                <h2>Follow us on: </h2>
+                <ul class = "social-links">
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href = "#">Kandy</a></li>
+                    <li><a href = "#">Down South</a></li>
+                    <li><a href = "#">Yala National Park</a></li>
+                    <li><a href = "#">Eastern Coast</a></li>
+                    <li><a href = "#">Sigiriya</a></li>
+                    <li><a href = "#">Western Coast</a></li>
+                    <li><a href = "#">Wasgamuwa National Park</a></li>
+                </ul>
+            </div>
+
+            <div class = "subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class = "flex">
+                    <input type = "email" placeholder="Enter Email" class = "form-control">
+                    <input type = "submit" class = "btn" value = "Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src = "js/script.js"></script>
+    </div>
+    </body>
+</html>

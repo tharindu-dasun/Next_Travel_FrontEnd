@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Travel Planning System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel = "stylesheet" href = "lk.ijse.gdse/font/fonts.css">
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/normalize.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/utility.css">
+    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/style.css">
+    <link rel = "stylesheet" href = "../../lk.ijse.gdse/css/responsive.css">
+</head>
+<body>
+<div class="all">
+<!-- navbar  -->
+<nav class = "navbar">
+    <div class = "container flex">
+        <a href = "index.html" class = "site-brand">
+            Next<span>Travel</span>
+        </a>
+
+        <button type = "button" id = "navbar-show-btn" class = "flex">
+            <i class = "fas fa-bars"></i>
+        </button>
+        <div id = "navbar-collapse">
+            <button type = "button" id = "navbar-close-btn" class = "flex">
+                <i class = "fas fa-times"></i>
+            </button>
+            <ul class = "navbar-nav">
+                <li class = "nav-item">
+                    <a href = "index.html" class = "nav-link">Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "about.html" class = "nav-link">About Us</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "hotel.html" class = "nav-link">Hotels</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "vehicle.html" class = "nav-link">Vehicles</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "travel_plans.html" class = "nav-link">Travel Plans</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "gallery.html" class = "nav-link">Gallery</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "booking.html" class = "nav-link">Booking</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "contact.html" class = "nav-link">Contact</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "login.html" class = "nav-link">Login</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "admin.html" class = "nav-link">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end of navbar  -->
+
+    <!-- header -->
+    <header class = "flex header-sm">
+        <div class = "container">
+            <div class = "header-title">
+                <h1>Hotels</h1>
+                <p>Book your stay at the best hotels in Sri Lanka, offering a variety of amenities and experiences to suit every traveler's needs.</p>
+            </div>
+            <div class = "title-wrap">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class = "sm-title">read these blog for more information</h2>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+<!-- blog section -->
+<section id = "blog" class = "py-4">
+    <div class = "container">
+<!--        <div class = "title-wrap">-->
+<!--            <h2 class = "sm-title">read these blog for information</h2>-->
+<!--            <h3 class = "lg-title">recent blog</h3>-->
+<!--        </div>-->
+
+        <div class = "blog-row">
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-the-blue-water.jpg" alt = "blog">
+                    <span class = "blog-date">5 Star</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Blue Water Hotel Wadduwa</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 60000 <br><br>
+                        Opt-2 (LKR) = 40000 <br><br>
+                        Opt-3 (LKR) = 80000 <br><br>
+                        Opt-4 (LKR) = 75000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-anantara-kalutara-resort.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Anantara Hotel Kalutara</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 65000 <br><br>
+                        Opt-2 (LKR) = 45000 <br><br>
+                        Opt-3 (LKR) = 90000 <br><br>
+                        Opt-4 (LKR) = 80000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Light House.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Light House Hotel Galle</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 70000 <br><br>
+                        Opt-2 (LKR) = 56000 <br><br>
+                        Opt-3 (LKR) = 85000 <br><br>
+                        Opt-4 (LKR) = 74000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Jetwing - Negombo.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Jetwing - Negombo</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 75000 <br><br>
+                        Opt-2 (LKR) = 55000 <br><br>
+                        Opt-3 (LKR) = 91500 <br><br>
+                        Opt-4 (LKR) = 78000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-centara-passikudah-resort.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Malu Malu Hotel Pasikuda</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 56000 <br><br>
+                        Opt-2 (LKR) = 46000 <br><br>
+                        Opt-3 (LKR) = 79000 <br><br>
+                        Opt-4 (LKR) = 66000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-the-kingsbury-hotel.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Kingsbury Hotel Colombo</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 79000 <br><br>
+                        Opt-2 (LKR) = 70000 <br><br>
+                        Opt-3 (LKR) = 92000 <br><br>
+                        Opt-4 (LKR) = 87000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Hikka Tranz.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Hikka Tranz Hikkaduwa</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 46000 <br><br>
+                        Opt-2 (LKR) = 38000 <br><br>
+                        Opt-3 (LKR) = 55000 <br><br>
+                        Opt-4 (LKR) = 50000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-The Lake Hotel polonnaruwa.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">The Lake Hotel Polonnaruwa</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 38000 <br><br>
+                        Opt-2 (LKR) = 30000 <br><br>
+                        Opt-3 (LKR) = 40000 <br><br>
+                        Opt-4 (LKR) = 36000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Jetwing - Jaffna.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Jetwing - Jaffna</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 76000 <br><br>
+                        Opt-2 (LKR) = 68500 <br><br>
+                        Opt-3 (LKR) = 85000 <br><br>
+                        Opt-4 (LKR) = 79000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-araliya-green-hills-hotel.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Araliya Green Hills Nuwara Eliya</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 46500 <br><br>
+                        Opt-2 (LKR) = 40000 <br><br>
+                        Opt-3 (LKR) = 55000 <br><br>
+                        Opt-4 (LKR) = 49000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-the-grand-hotel-kandy.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">The Grand Hotel Nuwara Eliya - Heritage Grand</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 76500 <br><br>
+                        Opt-2 (LKR) = 68000 <br><br>
+                        Opt-3 (LKR) = 81000 <br><br>
+                        Opt-4 (LKR) = 75000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-palmstone-retreat-kithulgala.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Palmstone Retreat, Kithulgala</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 67000 <br><br>
+                        Opt-2 (LKR) = 60000 <br><br>
+                        Opt-3 (LKR) = 71000 <br><br>
+                        Opt-4 (LKR) = 65000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-heritage-hotel-anuradhapura.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Heritage Hotel, Anuradhapura</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 10500 <br><br>
+                        Opt-2 (LKR) = 9000 <br><br>
+                        Opt-3 (LKR) = 15000 <br><br>
+                        Opt-4 (LKR) = 13500
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-The Grand Kandyan Hotel,.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">The Grand Kandyan Hotel, Kandy</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 59000 <br><br>
+                        Opt-2 (LKR) = 51000 <br><br>
+                        Opt-3 (LKR) = 66000 <br><br>
+                        Opt-4 (LKR) = 62000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-nine-skies.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Nine Skies, Demodara</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 77000 <br><br>
+                        Opt-2 (LKR) = 71000 <br><br>
+                        Opt-3 (LKR) = 83000 <br><br>
+                        Opt-4 (LKR) = 79000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Marki Villa-ella.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Marki Villa, Ella</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 75000 <br><br>
+                        Opt-2 (LKR) = 69000 <br><br>
+                        Opt-3 (LKR) = 81000 <br><br>
+                        Opt-4 (LKR) = 76000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-The Peacock Beach Resort,.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">The Peacock Beach Resort, Hambanthota</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 22000 <br><br>
+                        Opt-2 (LKR) = 18000 <br><br>
+                        Opt-3 (LKR) = 28000 <br><br>
+                        Opt-4 (LKR) = 25000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Shangri-La, Hambanthota.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Shangri-La, Hambanthota</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 87000 <br><br>
+                        Opt-2 (LKR) = 84000 <br><br>
+                        Opt-3 (LKR) = 93000 <br><br>
+                        Opt-4 (LKR) = 88000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-ekho-safari.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">EKHO Saffari, Tissamaharamaya</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 16000 <br><br>
+                        Opt-2 (LKR) = 11500 <br><br>
+                        Opt-3 (LKR) = 19000 <br><br>
+                        Opt-4 (LKR) = 16500
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-heritance-kandalama.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Heritance, Kandalama- Dambulla</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 89000 <br><br>
+                        Opt-2 (LKR) = 83000 <br><br>
+                        Opt-3 (LKR) = 97000 <br><br>
+                        Opt-4 (LKR) = 90000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Amaranthé Bay Resort & spa trinco.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Amaranthé Bay Resort & Spa, Trincomalee</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 35000 <br><br>
+                        Opt-2 (LKR) = 30000 <br><br>
+                        Opt-3 (LKR) = 41000 <br><br>
+                        Opt-4 (LKR) = 37000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-bellevue-beach-resorts.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Bellevue Beach - Nilaveli</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 55000 <br><br>
+                        Opt-2 (LKR) = 49000 <br><br>
+                        Opt-3 (LKR) = 59000 <br><br>
+                        Opt-4 (LKR) = 55000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-jetwing-surf.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Jetwing Surf, Pottuwil</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 56000 <br><br>
+                        Opt-2 (LKR) = 50000 <br><br>
+                        Opt-3 (LKR) = 63000 <br><br>
+                        Opt-4 (LKR) = 57000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-The Blue Wave, Arugambay.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">The Blue Wave, Arugambay</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 38000 <br><br>
+                        Opt-2 (LKR) = 35000 <br><br>
+                        Opt-3 (LKR) = 41000 <br><br>
+                        Opt-4 (LKR) = 37000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-jetwing-yala.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Jetwing – Yala, Paltupana</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 59000 <br><br>
+                        Opt-2 (LKR) = 55000 <br><br>
+                        Opt-3 (LKR) = 63000 <br><br>
+                        Opt-4 (LKR) = 58000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-the-palmyrah-house.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">The Palmyrah House, Mannar</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 55000 <br><br>
+                        Opt-2 (LKR) = 51000 <br><br>
+                        Opt-3 (LKR) = 59000 <br><br>
+                        Opt-4 (LKR) = 54000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-The Grand Mountain matale.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">The Grand Mountain Mathale</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 29000 <br><br>
+                        Opt-2 (LKR) = 27000 <br><br>
+                        Opt-3 (LKR) = 35000 <br><br>
+                        Opt-4 (LKR) = 30000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Amaloh Boutique Resort,matara.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Amaloh Boutique Resort, Matara</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 45000 <br><br>
+                        Opt-2 (LKR) = 42000 <br><br>
+                        Opt-3 (LKR) = 49000 <br><br>
+                        Opt-4 (LKR) = 46000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Tangerine Beach Hotel,kaluthara.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Tangerine Beach Hotel, Kalutara</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 34000 <br><br>
+                        Opt-2 (LKR) = 31000 <br><br>
+                        Opt-3 (LKR) = 39000 <br><br>
+                        Opt-4 (LKR) = 35000
+                    </p>
+                </div>
+            </div>
+
+            <div class = "blog-item my-2 shadow">
+                <div class = "blog-item-top">
+                    <img src = "../../lk.ijse.gdse/images/hotel-Le Grand, Galle.jpg" alt = "blog">
+                    <span class = "blog-date">oct 28, 2021</span>
+                </div>
+                <div class = "blog-item-bottom">
+                    <span>travel | john doe</span>
+                    <a href = "#">Le Grand, Galle</a>
+                    <p class = "text">
+                        Opt-1 (LKR) = 80000 <br><br>
+                        Opt-2 (LKR) = 75000 <br><br>
+                        Opt-3 (LKR) = 86000 <br><br>
+                        Opt-4 (LKR) = 79000
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- end of blog section -->
+
+
+    <!-- footer -->
+    <footer class = "py-4">
+        <div class = "container footer-row">
+            <div class = "footer-item">
+                <a href = "index.html" class = "site-brand">
+                    Next<span>Travel</span>
+                </a>
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+            </div>
+
+            <div class = "footer-item">
+                <h2>Follow us on: </h2>
+                <ul class = "social-links">
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href = "#">Kandy</a></li>
+                    <li><a href = "#">Down South</a></li>
+                    <li><a href = "#">Yala National Park</a></li>
+                    <li><a href = "#">Eastern Coast</a></li>
+                    <li><a href = "#">Sigiriya</a></li>
+                    <li><a href = "#">Western Coast</a></li>
+                    <li><a href = "#">Wasgamuwa National Park</a></li>
+                </ul>
+            </div>
+
+            <div class = "subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class = "flex">
+                    <input type = "email" placeholder="Enter Email" class = "form-control">
+                    <input type = "submit" class = "btn" value = "Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+<!-- js -->
+<script src = "js/script.js"></script>
+<script>
+
+</script>
+    </div>
+</body>
+</html>
