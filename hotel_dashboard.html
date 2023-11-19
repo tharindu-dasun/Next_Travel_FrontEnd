@@ -2,9 +2,285 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hotel DashBoard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<style>
+    /* styles.css */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        background-color: #333;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #111;
+    }
+
+    /*    form
+     */
+
+    .loginForm_container{
+        width: 600px;
+        padding: 50px;
+        border: 2px solid #b6c4da;
+        box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.20);
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password], input[type=number], input[type=email], input[type=tel], input[type=file] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=file]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for all buttons */
+    /*button{*/
+    /*    background-color: #4CAF50;*/
+    /*    color: white;*/
+    /*    padding: 14px 20px;*/
+    /*    margin: 8px 0;*/
+    /*    border: none;*/
+    /*    cursor: pointer;*/
+    /*    width: 100%;*/
+    /*    opacity: 0.9;*/
+    /*}
+
+
+
+
+     */
+
+    .btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-green {
+        background-color: #4CAF50;
+    }
+
+    .btn-orange {
+        background-color: #ff9800;
+    }
+
+    .btn-red {
+        background-color: #f44336;
+    }
+
+    .btn-darkgreen {
+        background-color: #0b807c;
+    }
+
+    .btn-blue {
+        background-color: #008CBA;
+    }
+
+
+
+    button:hover {
+        opacity:1;
+    }
+
+    /* Center the avatar image inside this container */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .upload:hover {
+        opacity:1;
+    }
+
+    /* Add padding to containers */
+    .loginForm_container {
+        padding: 16px;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .left-side, .right-side {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .header{
+        align-content: center;
+        padding-left: 40vw ;
+    }
+
+</style>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="#guide">Hotel</a></li>
+        <li><a href="#hotel">Vehicle</a></li>
+        <li><a href="#vehicle">Guide</a></li>
+        <li><a href="#package">Package</a></li>
+        <li><a href="#user">User</a></li>
+        <li><a href="#others">Others</a></li>
+    </ul>
+</nav>
+<header class="header">
+    <h1>Hotel DashBoard</h1>
+</header>
+</div>
+
+<div class="loginForm_container">
+    <div class="left-side">
+        <label for="hotelId"><b>Hotel Id</b></label>
+        <input type="text" id="hotelId" placeholder="Enter hotel Id" name="hotelId" required>
+
+        <label for="hotelName"><b>Hotel Name:</b></label>
+        <input type="text" id="hotelName" placeholder="Enter Hotel Name" name="hotelName" required>
+
+        <label for="nic"><b>NIC Number</b></label>
+        <input type="text" placeholder="Enter NIC Number" name="nic" required>
+
+        <label for="category"><b>Hotel Type :</b></label> <br>
+        <select id="Hotel_category" placeholder="Select category" name="category" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select> <br>
+
+        <label for="Location_Category"><b>Location :</b></label> <br>
+        <select id="location_category" placeholder="Select category" name="category" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select> <br>
+
+        <label for="address"><b>Address :</b></label>
+        <input type="text" id="address" placeholder="Enter Address" name="address" required>
+
+    </div>
+
+    <div class="right-side">
+        <label for="email"><b>Email :</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="contactNumber1"><b>Contact Number 1 :</b></label>
+        <input type="text" id="contactNumber1" placeholder="Enter Contact Number 1" name="contactNumber1" required>
+
+        <label for="contactNumber2"><b>Contact Number 2 :</b></label>
+        <input type="text" id="contactNumber2" placeholder="Enter Contact Number 2" name="contactNumber2" required>
+
+        <label for="pet"><b>Pet :</b></label> <br>
+        <select id="location_category" placeholder="Select category" name="category" required>
+            <option value="A">Allow</option>
+            <option value="B">Not Allow</option>
+        </select> <br>
+
+        <label for="hotelPrice"><b>Hotel Price :</b></label>
+        <input type="number" id="hotelPrice" name="hotelPrice" required>
+
+        <label for="id"><b>Hotel Image :</b></label>
+        <input type="file" name="id" id="id" required>
+    </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-green">Add</button>
+<button class="btn btn-orange">Update</button>
+<button class="btn btn-red">Delete</button>
+<button class="btn btn-darkgreen">Search</button>
+<button class="btn btn-blue">Clear</button>
+
+
+<script>
+    // script.js
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuItems = document.querySelectorAll('nav ul li a');
+        menuItems.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = e.target.hash;
+                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    });
+
+    // script.js
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('hotelForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const hotelData = Object.fromEntries(formData.entries());
+            console.log(hotelData);
+        });
+    });
+</script>
+<script src="script.js"></script>
 </body>
 </html>
