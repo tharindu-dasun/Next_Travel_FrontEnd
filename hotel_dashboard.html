@@ -76,23 +76,6 @@
         margin-bottom: 25px;
     }
 
-    /* Set a style for all buttons */
-    /*button{*/
-    /*    background-color: #4CAF50;*/
-    /*    color: white;*/
-    /*    padding: 14px 20px;*/
-    /*    margin: 8px 0;*/
-    /*    border: none;*/
-    /*    cursor: pointer;*/
-    /*    width: 100%;*/
-    /*    opacity: 0.9;*/
-    /*}
-
-
-
-
-     */
-
     .btn {
         display: inline-block;
         margin: 5px;
@@ -180,10 +163,10 @@
     <ul>
         <li><a href="hotel_dashboard.html">Hotel</a></li>
         <li><a href="vehical_dashboard.html">Vehicle</a></li>
-        <li><a href="vehicle.html">Guide</a></li>
+        <li><a href="guide_dashboard.html">Guide</a></li>
         <li><a href="#package">Package</a></li>
-        <li><a href="#user">User</a></li>
-        <li><a href="#others">Others</a></li>
+        <li><a href="user_dashboard.html">User</a></li>
+        <li><a href="index.html">Log Out</a></li>
     </ul>
 </nav>
 <header class="header">
@@ -256,30 +239,31 @@
 <button class="btn btn-blue">Clear</button>
 
 
-<script>
-    // script.js
-    document.addEventListener('DOMContentLoaded', () => {
-        const menuItems = document.querySelectorAll('nav ul li a');
-        menuItems.forEach((item) => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const target = e.target.hash;
-                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    });
+<!--<script>-->
+<!--    // script.js-->
+<!--    document.addEventListener('DOMContentLoaded', () => {-->
+<!--        const menuItems = document.querySelectorAll('nav ul li a');-->
+<!--        menuItems.forEach((item) => {-->
+<!--            item.addEventListener('click', (e) => {-->
+<!--                e.preventDefault();-->
+<!--                const target = e.target.hash;-->
+<!--                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });-->
+<!--            });-->
+<!--        });-->
+<!--    });-->
 
-    // script.js
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('hotelForm');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const hotelData = Object.fromEntries(formData.entries());
-            console.log(hotelData);
-        });
-    });
-</script>
-<script src="script.js"></script>
+<!--    // script.js-->
+<!--    document.addEventListener('DOMContentLoaded', () => {-->
+<!--        const form = document.getElementById('hotelForm');-->
+<!--        form.addEventListener('submit', (e) => {-->
+<!--            e.preventDefault();-->
+<!--            const formData = new FormData(form);-->
+<!--            const hotelData = Object.fromEntries(formData.entries());-->
+<!--            console.log(hotelData);-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<script src = "js/script.js"></script>
+<!--<script src="script.js"></script>-->
 </body>
 </html>
