@@ -203,74 +203,75 @@
 </div>
 
 <div class="loginForm_container">
-    <div class="left-side">
-        <label for="packageId"><b>Package Id</b></label>
-        <input type="text" id="packageId" placeholder="Enter Package Id" name="packageId" required>
+    <div class="loginForm_container">
+        <div class="left-side">
+            <label for="cusId"><b>Customer Id (Registered User Id) :</b></label>
+            <input type="text" id="cusId" placeholder="Customer Id" name="cusId" required>
 
-        <label for="package_category"><b>Package Category :</b></label> <br>
-        <select id="package_category" placeholder="Select category" name="package_category" required>
-            <option value="Regular">Regular</option>
-            <option value="Mid level">Mid Level</option>
-            <option value="Luxury">Luxury</option>
-            <option value="Super Luxury">Super Luxury</option>
-        </select> <br> <br>
+            <label for="package_category"><b>Package Category :</b></label> <br>
+            <select id="package_category" placeholder="Select category" name="package_category" required>
+                <option value="Regular">Regular</option>
+                <option value="Mid level">Mid Level</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Super Luxury">Super Luxury</option>
+            </select> <br> <br>
 
-        <label for="travel_area"><b>Travel Area :</b></label> <br>
-        <select id="travel_area" placeholder="Travel Area" name="travel_area" required>
-            <option value="Kandy and Upcountry">Kandy and Upcountry</option>
-            <option value="Eastern Coast">Eastern Coast</option>
-            <option value="Capital Colombo">Capital Colombo</option>
-            <option value="Western Coast">Western Coast</option>
-            <option value="North Peninsula">North Peninsula</option>
-            <option value="Down South">Down South</option>
-            <option value="Sigiriya and Dambulla">Sigiriya and Dambulla</option>
-            <option value="Anuradhapura and Polonnaruwa">Anuradhapura and Polonnaruwa</option>
-            <option value="Matale">Matale</option>
-        </select> <br> <br>
+            <label for="travel_area"><b>Travel Area :</b></label> <br>
+            <select id="travel_area" placeholder="Travel Area" name="travel_area" required>
+                <option value="Kandy and Upcountry">Kandy and Upcountry</option>
+                <option value="Eastern Coast">Eastern Coast</option>
+                <option value="Capital Colombo">Capital Colombo</option>
+                <option value="Western Coast">Western Coast</option>
+                <option value="North Peninsula">North Peninsula</option>
+                <option value="Down South">Down South</option>
+                <option value="Sigiriya and Dambulla">Sigiriya and Dambulla</option>
+                <option value="Anuradhapura and Polonnaruwa">Anuradhapura and Polonnaruwa</option>
+                <option value="Matale">Matale</option>
+            </select> <br> <br>
 
-        <label for="adults"><b>No of adults (age more than 18) :</b></label>
-        <input type="number" id="adults" name="adults" required>
+            <label for="hotels"><b>Eligible Hotels :</b></label>
+            <input type="text" id="hotels" placeholder="Hotels" name="hotels" required>
 
-        <label for="children"><b>No children (age less than 18) :</b></label>
-        <input type="number" id="children" name="children" required>
+            <label for="vehicals"><b>Eligible Vehicals :</b></label>
+            <input type="text" id="vehicals" placeholder="vehicals" name="vehicals" required>
 
-        <label for="total"><b>Total headcount :</b></label>
-        <input type="number" id="total" name="total" required>
-    </div>
+            <label for="adults"><b>No of adults (age more than 18) :</b></label>
+            <input type="number" id="adults" name="adults" required>
 
-    <div class="right-side">
-        <label for="pet"><b>With Pets or no :</b></label> <br>
-        <select id="pet" placeholder="Select category" name="category" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select> <br> <br>
+            <label for="children"><b>No children (age less than 18) :</b></label>
+            <input type="number" id="children" name="children" required>
+        </div>
 
-        <label for="guide"><b>Need a guide or no :</b></label> <br>
-        <select id="guide" placeholder="Select category" name="category" required>
-            <option value="Yes">Need</option>
-            <option value="No">No, Don't need</option>
-        </select> <br> <br>
+        <div class="right-side">
+            <label for="total"><b>Total headcount :</b></label>
+            <input type="number" id="total" name="total" required>
 
-        <label for="packPrice"><b>Package Price :</b></label>
-        <input type="number" id="packPrice" name="packPrice" required>
+            <label for="pet"><b>With Pets or no :</b></label> <br>
+            <select id="pet" placeholder="Select category" name="category" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select> <br> <br>
 
-        <label for="cusId"><b>Customer Id (Registered User Id) :</b></label>
-        <input type="text" id="cusId" placeholder="Customer Id" name="cusId" required>
+            <label for="guide"><b>Need a guide or no :</b></label> <br>
+            <select id="guide" placeholder="Select category" name="category" required>
+                <option value="Yes">Need</option>
+                <option value="No">No, Don't need</option>
+            </select> <br> <br> <br>
 
-        <label for="paid"><b>Paid Value :</b></label>
-        <input type="number" id="paid" name="paide" required>
+            <button class="btn btn-green">Calculate total Price</button> <br>
+            <br>
+
+            <label for="packPrice"><b>Package Price :</b></label>
+            <input type="number" id="packPrice" name="packPrice" required>
+            <br>
+
+            <button class="btn btn-orange">Make Payment</button> <br>
+            <button class="btn btn-red">Clear Field</button>
+        </div>
     </div>
 </div>
 <br>
 <br>
-
-
-<button class="btn btn-green">Add</button>
-<button class="btn btn-orange">Update</button>
-<button class="btn btn-red">Delete</button>
-<button class="btn btn-darkgreen">Search</button>
-<button class="btn btn-blue">Clear</button>
-
 
 <!--<script>-->
 <!--    // script.js-->

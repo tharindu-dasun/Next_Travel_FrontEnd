@@ -203,68 +203,71 @@
 </div>
 
 <div class="loginForm_container">
-    <div class="left-side">
-        <label for="hotelId"><b>Hotel Id</b></label>
-        <input type="text" id="hotelId" placeholder="Enter hotel Id" name="hotelId" required>
+    <div class="loginForm_container">
+        <div class="left-side">
+            <label for="hotelId"><b>Hotel Id</b></label>
+            <input type="text" id="hotelId" placeholder="Enter hotel Id" name="hotelId" required>
 
-        <label for="hotelName"><b>Hotel Name:</b></label>
-        <input type="text" id="hotelName" placeholder="Enter Hotel Name" name="hotelName" required>
+            <label for="hotelName"><b>Hotel Name:</b></label>
+            <input type="text" id="hotelName" placeholder="Enter Hotel Name" name="hotelName" required>
 
-        <label for="hotel_category"><b>Hotel Category :</b></label> <br>
-        <select id="Hotel_category" placeholder="Select category" name="category" required>
-            <option value="Economy">Economy</option>
-            <option value="Mid-Range">Mid-Range</option>
-            <option value="Luxury">Luxury</option>
-            <option value="Super Luxury">Super Luxury</option>
-        </select> <br>
+            <label for="hotel_category"><b>Hotel Category :</b></label> <br>
+            <select id="Hotel_category" placeholder="Select category" name="category" required>
+                <option value="Economy">Economy</option>
+                <option value="Mid-Range">Mid-Range</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Super Luxury">Super Luxury</option>
+            </select> <br>
 
-        <label for="Location_Category"><b>Location :</b></label> <br>
-        <select id="location_category" placeholder="Select category" name="category" required>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-        </select> <br>
+            <label for="Location_Category"><b>Location :</b></label> <br>
+            <select id="location_category" placeholder="Select category" name="category" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select> <br>
 
-        <label for="address"><b>Address :</b></label>
-        <input type="text" id="address" placeholder="Enter Address" name="address" required>
+            <label for="pet"><b>Pet :</b></label> <br>
+            <select id="pet" placeholder="Select category" name="category" required>
+                <option value="A">Allow</option>
+                <option value="B">Not Allow</option>
+            </select> <br>
 
-        <label for="email"><b>Email :</b></label>
-        <input type="email" id="email" placeholder="Enter Email" name="email" required>
+            <label for="address"><b>Address :</b></label>
+            <input type="text" id="address" placeholder="Enter Address" name="address" required>
+        </div>
 
-    </div>
+        <div class="right-side">
+            <label for="email"><b>Email :</b></label>
+            <input type="email" id="email" placeholder="Enter Email" name="email" required>
 
-    <div class="right-side">
+            <label for="contactNumber1"><b>Contact Number 1 :</b></label>
+            <input type="text" id="contactNumber1" placeholder="Enter Contact Number 1" name="contactNumber1" required>
 
+            <label for="contactNumber2"><b>Contact Number 2 :</b></label>
+            <input type="text" id="contactNumber2" placeholder="Enter Contact Number 2" name="contactNumber2" required>
 
-        <label for="contactNumber1"><b>Contact Number 1 :</b></label>
-        <input type="text" id="contactNumber1" placeholder="Enter Contact Number 1" name="contactNumber1" required>
+            <label for="hotelPrice"><b>Hotel Price :</b></label>
+            <input type="number" id="hotelPrice" name="hotelPrice" required>
 
-        <label for="contactNumber2"><b>Contact Number 2 :</b></label>
-        <input type="text" id="contactNumber2" placeholder="Enter Contact Number 2" name="contactNumber2" required>
+            <label for="id"><b>Hotel Image :</b></label>
+            <input type="file" name="id" id="id" required>
 
-        <label for="pet"><b>Pet :</b></label> <br>
-        <select id="pet" placeholder="Select category" name="category" required>
-            <option value="A">Allow</option>
-            <option value="B">Not Allow</option>
-        </select> <br>
-
-        <label for="hotelPrice"><b>Hotel Price :</b></label>
-        <input type="number" id="hotelPrice" name="hotelPrice" required>
-
-        <label for="id"><b>Hotel Image :</b></label>
-        <input type="file" name="id" id="id" required>
+            <div>
+                <button class="btn btn-green">Add</button>
+                <button class="btn btn-orange">Update</button>
+                <button class="btn btn-darkgreen">Search</button>
+                <button class="btn btn-red">Delete</button>
+                <button class="btn btn-blue">Clear</button>
+            </div>
+        </div>
     </div>
 </div>
 <br>
 <br>
 
 
-<button class="btn btn-green">Add</button>
-<button class="btn btn-orange">Update</button>
-<button class="btn btn-red">Delete</button>
-<button class="btn btn-darkgreen">Search</button>
-<button class="btn btn-blue">Clear</button>
+
 
 
 <!--<script>-->
