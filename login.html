@@ -23,8 +23,8 @@
     .loginForm_container{
         width: 600px;
         padding: 50px;
-        border: 2px solid #b6c4da;
-        box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.20);
+        /*border: 2px solid #b6c4da;*/
+        /*box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.20);*/
     }
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -126,6 +126,40 @@
         flex-direction: column;
         width: 50%;
     }
+
+    .btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-green {
+        background-color: #4CAF50;
+    }
+
+    .btn-orange {
+        background-color: #ff9800;
+    }
+
+    .btn-red {
+        background-color: #f44336;
+    }
+
+    .btn-darkgreen {
+        background-color: #0b807c;
+    }
+
+    .btn-blue {
+        background-color: #008CBA;
+    }
 </style>
 
 
@@ -199,45 +233,42 @@
             <div class="loginForm_container">
                 <div class="left-side">
                     <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
 
                     <label for="nic"><b>NIC Number</b></label>
-                    <input type="text" placeholder="Enter NIC Number" name="nic" required>
+                    <input type="text" id="nic" placeholder="Enter NIC Number" name="nic" required>
 
                     <label for="age"><b>Age</b></label>
-                    <input type="number" placeholder="Enter Age" name="age" required>
+                    <input type="number" id="age" placeholder="Enter Age" name="age" required>
 
-                    <label for="gender"><b>Gender</b></label>
-                    <input type="text" placeholder="Enter Gender" name="gender" required>
+                    <label for="frontNic"><b>Identity Card Front Image</b></label>
+                    <input type="file" name="id" id="frontNic" required>
+
+                    <button class="btn btn-green">login</button>
                 </div>
 
                 <div class="right-side">
-                    <label for="email"><b>Email</b></label>
-                    <input type="email" placeholder="Enter Email" name="email" required>
+                    <label for="userloginEmail"><b>Email</b></label>
+                    <input type="email" id="userloginEmail" placeholder="Enter Email" name="email" required>
 
-                    <label for="address"><b>Address</b></label>
-                    <input type="text" placeholder="Enter Address" name="address" required>
+                    <label for="userAddress"><b>Address</b></label>
+                    <input type="text" id="userAddress" placeholder="Enter Address" name="address" required>
 
-                    <label for="phone"><b>Phone Number</b></label>
-                    <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+                    <label for="userPhone"><b>Phone Number</b></label>
+                    <input type="tel" id="userPhone" placeholder="Enter Phone Number" name="phone" required>
 
-                    <label for="id"><b>Identity Card Front Image</b></label>
-                    <input type="file" name="id" id="id" required>
+                    <label for="gender"><b>Gender</b></label>
+                    <input type="text" id="gender" placeholder="Enter Gender" name="gender" required>
 
-                    <label for="id"><b>Identity Card Back Image</b></label>
-                    <input type="file" name="id" id="id" required>
+                    <label for="backNic"><b>Identity Card Back Image</b></label>
+                    <input type="file" name="id" id="backNic" required>
+
+                    <button class="btn btn-orange">Sign Up</button>
                 </div>
             </div>
-            <button type="submit">Login</button>
-            <h4>---Already have an account ?----</h4>
-            <button type="submit">Sign Up</button>
-            <br>
-            <br>
-            <br>
-        </div>
     </header>
     <!-- header -->
 

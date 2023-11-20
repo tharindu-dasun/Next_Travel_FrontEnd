@@ -1,1 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Travel Planning System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel = "stylesheet" href = "font/fonts.css">
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "css/normalize.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/utility.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/responsive.css">
 
+</head>
+
+<style>
+    .loginForm_container{
+        width: 600px;
+        padding: 50px;
+        /*border: 2px solid #b6c4da;*/
+        /*box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.20);*/
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password], input[type=number], input[type=email], input[type=tel], input[type=file] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=file]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity:1;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+
+    .cancelbtn:hover {
+        background-color: #333;
+    }
+
+    /* Center the avatar image inside this container */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    /* The "upload" button */
+    .upload {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .upload:hover {
+        opacity:1;
+    }
+
+    /* Add padding to containers */
+    .loginForm_container {
+        padding: 16px;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .left-side, .right-side {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-green {
+        background-color: #4CAF50;
+    }
+
+    .btn-orange {
+        background-color: #ff9800;
+    }
+
+    .btn-red {
+        background-color: #f44336;
+    }
+
+    .btn-darkgreen {
+        background-color: #0b807c;
+    }
+
+    .btn-blue {
+        background-color: #008CBA;
+    }
+</style>
+
+
+<body>
+<div class="all">
+    <!-- navbar  -->
+    <nav class = "navbar">
+        <div class = "container flex">
+            <a href = "index.html" class = "site-brand">
+                Next<span>Travel</span>
+            </a>
+
+            <button type = "button" id = "navbar-show-btn" class = "flex">
+                <i class = "fas fa-bars"></i>
+            </button>
+            <div id = "navbar-collapse">
+                <button type = "button" id = "navbar-close-btn" class = "flex">
+                    <i class = "fas fa-times"></i>
+                </button>
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link">Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "about.html" class = "nav-link">About Us</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "hotel.html" class = "nav-link">Hotels</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "vehicle.html" class = "nav-link">Vehicles</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "travel_plans.html" class = "nav-link">Travel Plans</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "gallery.html" class = "nav-link">Gallery</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "booking.html" class = "nav-link">Booking</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "contact.html" class = "nav-link">Contact</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "login.html" class = "nav-link">User</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "admin.html" class = "nav-link">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+
+
+    <!-- header -->
+    <header class = "flex header-sm">
+
+
+        <div class = "container">
+            <div class = "header-title">
+                <h1>Booking Form</h1>
+            </div>
+
+            <h2>-------------------------------------------------------------</h2>
+        </div>
+
+        <div class="loginForm_container">
+            <div class="left-side">
+                <label for="cusId"><b>Customer Id (Registered User Id) :</b></label>
+                <input type="text" id="cusId" placeholder="Customer Id" name="cusId" required>
+
+                <label for="package_category"><b>Package Category :</b></label> <br>
+                <select id="package_category" placeholder="Select category" name="package_category" required>
+                    <option value="Regular">Regular</option>
+                    <option value="Mid level">Mid Level</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Super Luxury">Super Luxury</option>
+                </select> <br> <br>
+
+                <label for="travel_area"><b>Travel Area :</b></label> <br>
+                <select id="travel_area" placeholder="Travel Area" name="travel_area" required>
+                    <option value="Kandy and Upcountry">Kandy and Upcountry</option>
+                    <option value="Eastern Coast">Eastern Coast</option>
+                    <option value="Capital Colombo">Capital Colombo</option>
+                    <option value="Western Coast">Western Coast</option>
+                    <option value="North Peninsula">North Peninsula</option>
+                    <option value="Down South">Down South</option>
+                    <option value="Sigiriya and Dambulla">Sigiriya and Dambulla</option>
+                    <option value="Anuradhapura and Polonnaruwa">Anuradhapura and Polonnaruwa</option>
+                    <option value="Matale">Matale</option>
+                </select> <br> <br>
+
+                <label for="hotels"><b>Eligible Hotels :</b></label>
+                <input type="text" id="hotels" placeholder="Hotels" name="hotels" required>
+
+                <label for="vehicals"><b>Eligible Vehicals :</b></label>
+                <input type="text" id="vehicals" placeholder="vehicals" name="vehicals" required>
+
+                <label for="adults"><b>No of adults (age more than 18) :</b></label>
+                <input type="number" id="adults" name="adults" required>
+
+                <label for="children"><b>No children (age less than 18) :</b></label>
+                <input type="number" id="children" name="children" required>
+            </div>
+
+            <div class="right-side">
+                <label for="total"><b>Total headcount :</b></label>
+                <input type="number" id="total" name="total" required>
+
+                <label for="pet"><b>With Pets or no :</b></label> <br>
+                <select id="pet" placeholder="Select category" name="category" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select> <br> <br>
+
+                <label for="guide"><b>Need a guide or no :</b></label> <br>
+                <select id="guide" placeholder="Select category" name="category" required>
+                    <option value="Yes">Need</option>
+                    <option value="No">No, Don't need</option>
+                </select> <br> <br> <br>
+
+                <button class="btn btn-green">Calculate total Price</button> <br>
+                <br>
+
+                <label for="packPrice"><b>Package Price :</b></label>
+                <input type="number" id="packPrice" name="packPrice" required>
+                <br>
+
+                <button class="btn btn-orange">Make Payment</button> <br>
+                <button class="btn btn-red">Clear Field</button>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+</div>
+</header>
+<!-- header -->
+
+<!-- footer -->
+<footer class = "py-4">
+    <div class = "container footer-row">
+        <div class = "footer-item">
+            <a href = "index.html" class = "site-brand">
+                Next<span>Travel</span>
+            </a>
+            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa suscipit veritatis voluptate.</p>
+        </div>
+
+        <div class = "footer-item">
+            <h2>Follow us on: </h2>
+            <ul class = "social-links">
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-pinterest"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class = "footer-item">
+            <h2>Popular Places:</h2>
+            <ul>
+                <li><a href = "#">Kandy</a></li>
+                <li><a href = "#">Down South</a></li>
+                <li><a href = "#">Yala National Park</a></li>
+                <li><a href = "#">Eastern Coast</a></li>
+                <li><a href = "#">Sigiriya</a></li>
+                <li><a href = "#">Western Coast</a></li>
+                <li><a href = "#">Wasgamuwa National Park</a></li>
+            </ul>
+        </div>
+
+        <div class = "subscribe-form footer-item">
+            <h2>Subscribe for Newsletter!</h2>
+            <form class = "flex">
+                <input type = "email" placeholder="Enter Email" class = "form-control">
+                <input type = "submit" class = "btn" value = "Subscribe">
+            </form>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+<!-- js -->
+<script src = "js/script.js"></script>
+<script>
+
+</script>
+</div>
+</body>
+</html>
