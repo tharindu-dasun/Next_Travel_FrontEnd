@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide DashBoard</title>
+    <title>Navigation Bar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -155,19 +155,48 @@
         align-content: center;
         padding-left: 40vw ;
     }
+
 </style>
 
 <body>
-<nav>
-    <ul>
-        <li><a href="hotel_dashboard.html">Hotel</a></li>
-        <li><a href="vehical_dashboard.html">Vehicle</a></li>
-        <li><a href="guide_dashboard.html">Guide</a></li>
-        <li><a href="#package">Package</a></li>
-        <li><a href="user_dashboard.html">User</a></li>
-        <li><a href="index.html">Log Out</a></li>
-    </ul>
+<!--<nav>-->
+<!--    <ul>-->
+<!--        <li><a href="hotel_dashboard.html">Hotel</a></li>-->
+<!--        <li><a href="vehical_dashboard.html">Vehicle</a></li>-->
+<!--        <li><a href="guide_dashboard.html">Guide</a></li>-->
+<!--        <li><a href="package_dashboard.html">Package</a></li>-->
+<!--        <li><a href="user_dashboard.html">User</a></li>-->
+<!--        <li><a href="index.html">Log Out</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+
+<nav class = "navbar">
+    <div class = "container flex">
+        <div id = "navbar-collapse">
+            <ul class = "navbar-nav">
+                <li class = "nav-item">
+                    <a href = "hotel_dashboard.html" class = "nav-link">Hotel</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "vehical_dashboard.html" class = "nav-link">Vehical</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "guide_dashboard.html" class = "nav-link">Guide</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "package_dashboard.html" class = "nav-link">Packages</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "user_dashboard.html" class = "nav-link">User</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "index.html" class = "nav-link">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
+
 <header class="header">
     <h1>Guide DashBoard</h1>
 </header>
@@ -175,11 +204,11 @@
 
 <div class="loginForm_container">
     <div class="left-side">
-        <label for="guidelId"><b>Guide Id</b></label>
-        <input type="text" id="guidelId" placeholder="Enter guide Id" name="guideId" required>
+        <label for="guideId"><b>Guide Id</b></label>
+        <input type="text" id="guideId" placeholder="Enter guide Id" name="guideId" required>
 
         <label for="guideName"><b>Guide Name:</b></label>
-        <input type="text" id="guidelName" placeholder="Enter Guide Name" name="guideName" required>
+        <input type="text" id="guideName" placeholder="Enter Guide Name" name="guideName" required>
 
         <label for="address"><b>Address :</b></label>
         <input type="text" id="address" placeholder="Enter Address" name="address" required>
@@ -219,30 +248,31 @@
 <button class="btn btn-blue">Clear</button>
 
 
-<script>
-    // script.js
-    document.addEventListener('DOMContentLoaded', () => {
-        const menuItems = document.querySelectorAll('nav ul li a');
-        menuItems.forEach((item) => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const target = e.target.hash;
-                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    });
+<!--<script>-->
+<!--    // script.js-->
+<!--    document.addEventListener('DOMContentLoaded', () => {-->
+<!--        const menuItems = document.querySelectorAll('nav ul li a');-->
+<!--        menuItems.forEach((item) => {-->
+<!--            item.addEventListener('click', (e) => {-->
+<!--                e.preventDefault();-->
+<!--                const target = e.target.hash;-->
+<!--                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });-->
+<!--            });-->
+<!--        });-->
+<!--    });-->
 
-    // script.js
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('hotelForm');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const hotelData = Object.fromEntries(formData.entries());
-            console.log(hotelData);
-        });
-    });
-</script>
-<script src="script.js"></script>
+<!--    // script.js-->
+<!--    document.addEventListener('DOMContentLoaded', () => {-->
+<!--        const form = document.getElementById('hotelForm');-->
+<!--        form.addEventListener('submit', (e) => {-->
+<!--            e.preventDefault();-->
+<!--            const formData = new FormData(form);-->
+<!--            const hotelData = Object.fromEntries(formData.entries());-->
+<!--            console.log(hotelData);-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<script src = "js/script.js"></script>
+<!--<script src="script.js"></script>-->
 </body>
 </html>

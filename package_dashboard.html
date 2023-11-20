@@ -198,46 +198,69 @@
 </nav>
 
 <header class="header">
-    <h1>User DashBoard</h1>
+    <h1>Package DashBoard</h1>
 </header>
 </div>
 
 <div class="loginForm_container">
     <div class="left-side">
-        <label for="userName"><b>User Name:</b></label>
-        <input type="text" id="userName" placeholder="Enter User Name" name="userName" required>
+        <label for="packageId"><b>Package Id</b></label>
+        <input type="text" id="packageId" placeholder="Enter Package Id" name="packageId" required>
 
-        <label for="password"><b>Enter Password:</b></label>
-        <input type="password" id="password" placeholder="Enter Password" name="password" required>
-
-        <label for="nicNumber"><b>NIC Number :</b></label>
-        <input type="text" id="nicNumber" placeholder="Enter NIC Number " name="nicNumber" required>
-
-        <label for="age"><b>Age :</b></label>
-        <input type="text" id="age" placeholder="Enter Age " name="age" required>
-
-        <label for="gender"><b>Gender :</b></label> <br>
-        <select id="gender" placeholder="Select Gender" name="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+        <label for="package_category"><b>Package Category :</b></label> <br>
+        <select id="package_category" placeholder="Select category" name="package_category" required>
+            <option value="Regular">Regular</option>
+            <option value="Mid level">Mid Level</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Super Luxury">Super Luxury</option>
         </select> <br> <br>
+
+        <label for="travel_area"><b>Travel Area :</b></label> <br>
+        <select id="travel_area" placeholder="Travel Area" name="travel_area" required>
+            <option value="Kandy and Upcountry">Kandy and Upcountry</option>
+            <option value="Eastern Coast">Eastern Coast</option>
+            <option value="Capital Colombo">Capital Colombo</option>
+            <option value="Western Coast">Western Coast</option>
+            <option value="North Peninsula">North Peninsula</option>
+            <option value="Down South">Down South</option>
+            <option value="Sigiriya and Dambulla">Sigiriya and Dambulla</option>
+            <option value="Anuradhapura and Polonnaruwa">Anuradhapura and Polonnaruwa</option>
+            <option value="Matale">Matale</option>
+        </select> <br> <br>
+
+        <label for="adults"><b>No of adults (age more than 18) :</b></label>
+        <input type="number" id="adults" name="adults" required>
+
+        <label for="children"><b>No children (age less than 18) :</b></label>
+        <input type="number" id="children" name="children" required>
+
+        <label for="total"><b>Total headcount :</b></label>
+        <input type="number" id="total" name="total" required>
+
+
     </div>
 
     <div class="right-side">
-        <label for="email"><b>Email :</b></label>
-        <input type="text" id="email" placeholder="Enter Email" name="email" required>
+        <label for="pet"><b>With Pets or no :</b></label> <br>
+        <select id="pet" placeholder="Select category" name="category" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select> <br> <br>
 
-        <label for="address"><b>Address :</b></label>
-        <input type="text" id="address" placeholder="Enter Address" name="address" required>
+        <label for="guide"><b>Need a guide or no :</b></label> <br>
+        <select id="guide" placeholder="Select category" name="category" required>
+            <option value="Yes">Need</option>
+            <option value="No">No, Don't need</option>
+        </select> <br> <br>
 
-        <label for="contactNumber"><b>Contact Number :</b></label>
-        <input type="text" id="contactNumber" placeholder="Enter Contact Number " name="contactNumber" required>
+        <label for="packPrice"><b>Package Price :</b></label>
+        <input type="number" id="packPrice" name="packPrice" required>
 
-        <label for="nicFront"><b>NIC Front Side :</b></label>
-        <input type="file" name="id" id="nicFront" required>
+        <label for="cusId"><b>Customer Id (Registered User Id) :</b></label>
+        <input type="text" id="cusId" placeholder="Customer Id" name="cusId" required>
 
-        <label for="nicBack"><b>NIC Back Side :</b></label>
-        <input type="file" name="id" id="nicBack" required>
+        <label for="paid"><b>Paid Value :</b></label>
+        <input type="number" id="paid" name="paide" required>
     </div>
 </div>
 <br>

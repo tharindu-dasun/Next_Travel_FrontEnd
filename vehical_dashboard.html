@@ -76,23 +76,6 @@
         margin-bottom: 25px;
     }
 
-    /* Set a style for all buttons */
-    /*button{*/
-    /*    background-color: #4CAF50;*/
-    /*    color: white;*/
-    /*    padding: 14px 20px;*/
-    /*    margin: 8px 0;*/
-    /*    border: none;*/
-    /*    cursor: pointer;*/
-    /*    width: 100%;*/
-    /*    opacity: 0.9;*/
-    /*}
-
-
-
-
-     */
-
     .btn {
         display: inline-block;
         margin: 5px;
@@ -176,16 +159,44 @@
 </style>
 
 <body>
-<nav>
-    <ul>
-        <li><a href="hotel_dashboard.html">Hotel</a></li>
-        <li><a href="vehical_dashboard.html">Vehicle</a></li>
-        <li><a href="guide_dashboard.html">Guide</a></li>
-        <li><a href="#package">Package</a></li>
-        <li><a href="user_dashboard.html">User</a></li>
-        <li><a href="index.html">Log Out</a></li>
-    </ul>
+<!--<nav>-->
+<!--    <ul>-->
+<!--        <li><a href="hotel_dashboard.html">Hotel</a></li>-->
+<!--        <li><a href="vehical_dashboard.html">Vehicle</a></li>-->
+<!--        <li><a href="guide_dashboard.html">Guide</a></li>-->
+<!--        <li><a href="package_dashboard.html">Package</a></li>-->
+<!--        <li><a href="user_dashboard.html">User</a></li>-->
+<!--        <li><a href="index.html">Log Out</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+
+<nav class = "navbar">
+    <div class = "container flex">
+        <div id = "navbar-collapse">
+            <ul class = "navbar-nav">
+                <li class = "nav-item">
+                    <a href = "hotel_dashboard.html" class = "nav-link">Hotel</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "vehical_dashboard.html" class = "nav-link">Vehical</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "guide_dashboard.html" class = "nav-link">Guide</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "package_dashboard.html" class = "nav-link">Packages</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "user_dashboard.html" class = "nav-link">User</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "index.html" class = "nav-link">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
+
 <header class="header">
     <h1>Vehical DashBoard</h1>
 </header>
@@ -193,19 +204,24 @@
 
 <div class="loginForm_container">
     <div class="left-side">
+        <label for="vehical_Id"><b>Hotel Id</b></label>
+        <input type="text" id="vehical_Id" placeholder="Vehical Id" name="vehiicalId" required>
+
         <label for="brand"><b>Vehicale Brand :</b></label>
         <input type="text" id="brand" placeholder="Enter Vehicale Brand" name="brand" required>
 
-        <label for="subName"><b>Sub Name :</b></label>
-        <input type="text" id="subName" placeholder="Enter Sub Name" name="subName" required>
+        <label for="vehical_type"><b>Type :</b></label> <br>
+        <select id="Vehical_type" placeholder="Select Type" name="vehical_type" required>
+            <option value="Car">Car</option>
+            <option value="Van">Van (7-12 seats)</option>
+            <option value="SUV">SUV</option>
+            <option value="Bus">Bus (30-40 seats)</option>
+        </select> <br>
 
-        <label for="type"><b>Type :</b></label>
-        <input type="text" placeholder="Enter Type" name="type" required>
+        <label for="vehical_colour"><b>colour :</b></label>
+        <input type="text" id="vehical_colour" placeholder="Enter Colour" name="colour" required>
 
-        <label for="colour"><b>colour :</b></label>
-        <input type="text" placeholder="Enter Colour" name="colour" required>
-
-        <label for="category"><b>Vehical Type :</b></label> <br>
+        <label for="vehical_category"><b>Vehical Type :</b></label> <br>
         <select id="Vehical_category" placeholder="Select category" name="category" required>
             <option value="Economic">Economic</option>
             <option value="Midrange">Midrange</option>
@@ -213,39 +229,60 @@
             <option value="Super Luxury">Super Luxury</option>
         </select> <br>
 
-        <label for="transmission"><b>Transmission :</b></label> <br>
+        <label for="transmission_category"><b>Transmission Type :</b></label> <br>
         <select id="transmission_category" placeholder="Select transmission" name="transmission" required>
             <option value="Auto">Auto</option>
             <option value="Manuel">Manuel</option>
         </select> <br>
 
-    </div>
+        <label for="seatCapacity"><b>Seat Capacity :</b></label>
+        <input type="text" id="seatCapacity" placeholder="Seat capacity (exclude driver)" name="seatCapacity" required>
 
-    <div class="right-side">
-
-        <label for="seatCapacity"><b>SeatCapacity :</b></label>
-        <input type="text" id="seatCapacity" placeholder="Enter seatCapacity" name="seatCapacity" required>
-
-        <label for="fuelType"><b>FuelType :</b></label> <br>
+        <label for="fuelType_category"><b>FuelType :</b></label> <br>
         <select id="fuelType_category" placeholder="Select category" name="fuelType" required>
             <option value="Diesel">Diesel</option>
             <option value="Petrol">Petrol</option>
-        </select> <br>
+        </select> <br> <br>
 
-        <label for="model"><b>Model :</b></label> <br>
-        <select id="model_category" placeholder="Select model" name="model" required>
+        <label for="model_category"><b>Model :</b></label> <br>
+        <select id="model_category"  placeholder="Select model" name="model" required>
             <option value="Hybrid">Hybrid</option>
             <option value="Non hybrid">Non hybrid</option>
         </select> <br>
 
-        <label for="pricePerKM"><b>Price Per KM :</b></label>
-        <input type="number" id="pricePerKM" name="pricePerKM" required>
+        <label for="fuelUsage"><b>Fuel usage (km/l)  :</b></label>
+        <input type="number" id="fuelUsage" placeholder="Fuel usage (km/l)" name="fuelUsage" required>
 
-        <label for="vimage1"><b>Vehical Image 1 :</b></label>
+    </div>
+
+    <div class="right-side">
+
+        <label for="vimage1"><b>Vehical Front View :</b></label>
         <input type="file" name="vimage1" id="vimage1" required>
 
-        <label for="vimage2"><b>Vehical Image 2 :</b></label>
+        <label for="vimage2"><b>Vehical Rear View :</b></label>
         <input type="file" name="vimage2" id="vimage2" required>
+
+        <label for="vimage3"><b>Vehical Side view :</b></label>
+        <input type="file" name="vimage3" id="vimage3" required>
+
+        <label for="vimage4"><b>Vehical Font-Interior :</b></label>
+        <input type="file" name="vimage4" id="vimage4" required>
+
+        <label for="vimage5"><b>Vehical Rear-Interior :</b></label>
+        <input type="file" name="vimage5" id="vimage5" required>
+
+        <label for="driverName"><b>Driver Name:</b></label>
+        <input type="text" id="driverName" placeholder="Enter Driver Name" name="driverName" required>
+
+        <label for="contactNumber"><b>Contact Number :</b></label>
+        <input type="text" id="contactNumber" placeholder="Enter Contact Number " name="contactNumber" required>
+
+        <label for="licenseFront"><b>Driver's license (Front) :</b></label>
+        <input type="file" name="licenseFront"  id="licenseFront" required>
+
+        <label for="licenseRear"><b>Driver's license (Rear) :</b></label>
+        <input type="file" name="licenseRear"  id="licenseRear" required>
     </div>
 </div>
 <br>
@@ -259,30 +296,31 @@
 <button class="btn btn-blue">Clear</button>
 
 
-<script>
-    // script.js
-    document.addEventListener('DOMContentLoaded', () => {
-        const menuItems = document.querySelectorAll('nav ul li a');
-        menuItems.forEach((item) => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const target = e.target.hash;
-                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    });
+<!--<script>-->
+<!--    // script.js-->
+<!--    document.addEventListener('DOMContentLoaded', () => {-->
+<!--        const menuItems = document.querySelectorAll('nav ul li a');-->
+<!--        menuItems.forEach((item) => {-->
+<!--            item.addEventListener('click', (e) => {-->
+<!--                e.preventDefault();-->
+<!--                const target = e.target.hash;-->
+<!--                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });-->
+<!--            });-->
+<!--        });-->
+<!--    });-->
 
-    // script.js
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('hotelForm');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const hotelData = Object.fromEntries(formData.entries());
-            console.log(hotelData);
-        });
-    });
-</script>
-<script src="script.js"></script>
+<!--    // script.js-->
+<!--    document.addEventListener('DOMContentLoaded', () => {-->
+<!--        const form = document.getElementById('hotelForm');-->
+<!--        form.addEventListener('submit', (e) => {-->
+<!--            e.preventDefault();-->
+<!--            const formData = new FormData(form);-->
+<!--            const hotelData = Object.fromEntries(formData.entries());-->
+<!--            console.log(hotelData);-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<script src = "js/script.js"></script>
+<!--<script src="script.js"></script>-->
 </body>
 </html>
